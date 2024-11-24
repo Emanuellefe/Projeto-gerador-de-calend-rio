@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title> 
+    <link rel="stylesheet"  href="style.css"> <!--Ligando com a parte de estilização do site-->
+ 
+</head>
+
+<body>
+ <h1> <img src="logo.png" width="70px" height="70px" alt="logo"> Gerador de Calendário</h1> <!--H1 tem a logo do gerador e o título-->
+
+<form action="trab.php" method="post" class="formulario"><!--Criação do formulário, action diz para onde o envio dos dados inseridos no formulário serão enviados,
+     method é o método que será enviado os dados e class seria o nome para colocar para a estilização do css -->
+
+    <label for="dia">Dia:</label> <!--O for "dia" é o nome para o campo que vai colocar os dados, e Dia: é o texto que aparecerá como rótulo-->
+
+    <input type="number" id="dia" placeholder ="Precisa ser número" name="dia"  required> <!-- o type indica que só poderá ser inserido números, o id é a identificação, e o
+     placeholder avisa dentro do campo que o dado que for inserido precisa ser um número, 
+     e o name é o nome do campo de entrada para a identificação de quando os dados for enviado-->
+
+    <label for="mes">Mês:</label><!--O for "mes" é o nome para o campo que vai colocar os dados, e Mês: é o texto que aparecerá como rótulo-->
+
+    <input type="number" id="mes" placeholder ="Precisa ser número" name="mes" required><!-- o type indica que só poderá ser inserido números, o id é a identificação, 
+    e o placeholder avisa dentro do campo que  o dado que for inserido precisa ser um número ,
+     e o name é o nome do campo de entrada para a identificação de quando os dados for enviado-->
+
+    <label for="ano">Ano:</label> <!--O for "ano" é o nome para o campo que vai colocar os dados, e Ano: é o texto que aparecerá como rótulo -->
+
+    <input type="number" id="ano" placeholder ="Precisa ser número" name="ano" required> <!-- o type indica que só poderá ser inserido números, o id é a identificação, 
+    e o placeholder avisa dentro do campo que  o dado que for inserido precisa ser um número,,
+     e o name é o nome do campo de entrada para a identificação de quando os dados for enviado-->
+
+    <input type="submit" value="Gerar calendário" class=botao> <!--Botão que a pessoa vai clicar para gerar o calendário e a sua class para estilizar no CSS -->
+</form>
+
+</body>
+
+</html>
